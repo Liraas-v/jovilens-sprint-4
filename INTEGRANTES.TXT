@@ -1,0 +1,8 @@
+JoviLens - Sprint 4 Web Development / Front-End Design (entrega conjunta)
+Challenge FIAP x JOVI 2026
+Turma: 1ESPU - Engenharia de Software
+
+Integrantes:
+Henrique Lira Da Silva Costa - RM571009
+Lucas De Abreu Latuf - RM570068
+Lucas Cardoso Franco - RM571430
