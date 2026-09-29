@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { startTransition, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { ITENS_MENU } from '../constants/projeto'
@@ -17,9 +17,14 @@ function Cabecalho() {
   }
 
   function aoSair() {
-    sair()
+    // O router aplica a navegação numa transição. Se a sessão fosse limpa
+    // fora dela, a rota privada redirecionaria para /login antes de a home
+    // aparecer; na mesma transição as duas mudanças chegam juntas.
+    startTransition(() => {
+      navegar('/')
+      sair()
+    })
     fecharMenu()
-    navegar('/')
   }
 
   return (
