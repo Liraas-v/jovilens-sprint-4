@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #edeff2;
+  --color-bg2: #e0e4ea;
+  --color-card: #ffffff;
+  --color-texto: #171a20;
+  --color-muted: #545b67;
+  --color-borda: rgba(23, 26, 32, 0.16);
+  --color-tinta: #171a20;
+  --color-acao: #1b3af0;
+  --color-acao-texto: #ffffff;
+  --color-flash: #ffb020;
+  --color-erro: #b3261e;
+  --font-titulo: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  --font-sans: "Instrument Sans", "Segoe UI", sans-serif;
+}
+
+/* Tema escuro: só troca os tokens, os componentes não mudam. */
+[data-tema='dark'] {
+  --color-bg: #12151a;
+  --color-bg2: #1a1e25;
+  --color-card: #1e232b;
+  --color-texto: #edeff2;
+  --color-muted: #a4abb7;
+  --color-borda: rgba(237, 239, 242, 0.18);
+  --color-acao: #8b98ff;
+  --color-acao-texto: #12151a;
+  --color-erro: #ff8a8a;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-acao);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
