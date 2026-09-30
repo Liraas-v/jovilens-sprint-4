@@ -47,3 +47,13 @@ export const EQUIPE = [
 
 // E-mail fictício da equipe: o projeto não tem caixa de entrada monitorada.
 export const CONTATO = { email: 'contato.jovilens@gmail.com' }
+
+// Cenas que o simulador sorteia. `id` é a chave da foto em IMAGENS e `modo`
+// é o que o JoviLens escolheria para ela.
+export const CENAS = [
+  { id: 'lousa', modo: 'Documento', rotulo: 'Lousa em sala de aula' },
+  { id: 'noite', modo: 'Noite', rotulo: 'Campus à noite' },
+  { id: 'campus', modo: 'Foto', rotulo: 'Encontro no campus' },
+  { id: 'idioma', modo: 'Tradução', rotulo: 'Slide em outro idioma' },
+  { id: 'retrato', modo: 'Retrato', rotulo: 'Retrato com fundo desfocado' },
+]
