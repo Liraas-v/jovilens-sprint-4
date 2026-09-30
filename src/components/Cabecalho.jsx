@@ -77,7 +77,7 @@ function Cabecalho() {
             <Link
               to="/login"
               onClick={fecharMenu}
-              className="rounded bg-acao px-3 py-2 text-sm font-semibold text-acao-texto"
+              className="rounded border border-borda px-3 py-2 text-sm font-semibold text-texto hover:text-acao"
             >
               Entrar
             </Link>
