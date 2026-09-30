@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Cabecalho from './components/Cabecalho'
 import Rodape from './components/Rodape'
 import RotaPrivada from './components/RotaPrivada'
+import { useRolarParaHash } from './hooks/useRolarParaHash'
 import Historico from './pages/Historico'
 import Inicio from './pages/Inicio'
 import Login from './pages/Login'
@@ -10,6 +11,8 @@ import NaoEncontrada from './pages/NaoEncontrada'
 
 // App só cuida do layout fixo e das rotas; a lógica fica nos hooks.
 function App() {
+  useRolarParaHash()
+
   return (
     <>
       <a
