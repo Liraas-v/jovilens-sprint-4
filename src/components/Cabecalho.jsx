@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { ITENS_MENU } from '../constants/projeto'
 import { useAuth } from '../hooks/useAuth'
+import { useTema } from '../hooks/useTema'
 
 const estiloLink =
   'block rounded px-3 py-2 text-sm font-semibold text-texto hover:text-acao'
@@ -10,6 +11,7 @@ const estiloLink =
 function Cabecalho() {
   const [menuAberto, setMenuAberto] = useState(false)
   const { usuario, sair } = useAuth()
+  const { tema, alternarTema } = useTema()
   const navegar = useNavigate()
 
   function fecharMenu() {
@@ -59,6 +61,15 @@ function Cabecalho() {
               {item.rotulo}
             </Link>
           ))}
+
+          <button
+            type="button"
+            onClick={alternarTema}
+            aria-label={tema === 'dark' ? 'Mudar para o tema claro' : 'Mudar para o tema escuro'}
+            className="rounded border border-borda px-3 py-2 text-left text-sm font-semibold hover:text-acao md:text-center"
+          >
+            {tema === 'dark' ? 'Tema claro' : 'Tema escuro'}
+          </button>
 
           {usuario ? (
             <>
