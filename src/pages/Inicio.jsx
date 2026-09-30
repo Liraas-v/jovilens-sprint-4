@@ -1,12 +1,21 @@
-// Placeholder: a landing de verdade entra na Parte 3.
+import Contato from '../components/Contato'
+import Equipe from '../components/Equipe'
+import Galeria from '../components/Galeria'
+import Hero from '../components/Hero'
+import PublicoAlvo from '../components/PublicoAlvo'
+import Solucao from '../components/Solucao'
+
+// A landing é só a composição das seções, na ordem do menu.
 function Inicio() {
   return (
-    <section className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="font-titulo text-4xl font-extrabold">JoviLens</h1>
-      <p className="mt-4 text-muted">
-        A câmera que lê a cena. Projeto em construção.
-      </p>
-    </section>
+    <>
+      <Hero />
+      <Solucao />
+      <PublicoAlvo />
+      <Galeria />
+      <Equipe />
+      <Contato />
+    </>
   )
 }
 
