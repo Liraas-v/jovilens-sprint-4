@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #edeff2;
-  --color-bg2: #e0e4ea;
+  --color-bg: #f5f7fa;
+  --color-bg2: #eaeef4;
   --color-card: #ffffff;
-  --color-texto: #171a20;
-  --color-muted: #545b67;
-  --color-borda: rgba(23, 26, 32, 0.16);
-  --color-tinta: #171a20;
+  --color-texto: #242933;
+  --color-muted: #5b6472;
+  --color-borda: rgba(36, 41, 51, 0.12);
+  --color-tinta: #242933;
   --color-acao: #1b3af0;
   --color-acao-texto: #ffffff;
   --color-flash: #ffb020;
