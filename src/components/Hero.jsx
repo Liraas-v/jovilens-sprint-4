@@ -32,14 +32,18 @@ function Hero() {
           </a>
         </div>
 
-        <div className="overflow-hidden rounded-3xl bg-card lg:col-start-2">
+        {/* Fundo branco fixo: o da própria imagem é branco, nos dois temas */}
+        <figure className="relative overflow-hidden rounded-3xl bg-white lg:col-start-2">
           <Foto
-            imagem={IMAGENS.lousa}
+            imagem={IMAGENS.joviV70}
             prioridade
             tamanhos="(min-width: 1024px) 560px, 100vw"
             className="h-auto w-full"
           />
-        </div>
+          <figcaption className="absolute right-4 top-3 text-xs text-neutral-500">
+            {IMAGENS.joviV70.credito}
+          </figcaption>
+        </figure>
       </div>
 
       <dl className="mt-12 grid gap-4 sm:grid-cols-3">
