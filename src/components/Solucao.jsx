@@ -1,5 +1,7 @@
 import { RECURSOS } from '../constants/conteudo'
+import ClimaContextual from './ClimaContextual'
 import Secao from './Secao'
+import SimuladorDeteccao from './SimuladorDeteccao'
 
 function Solucao() {
   return (
@@ -18,6 +20,12 @@ function Solucao() {
           </li>
         ))}
       </ul>
+
+      <h3 className="mt-14 font-titulo text-2xl font-medium">Teste na prática</h3>
+      <div className="mt-4 grid gap-4 lg:grid-cols-2">
+        <ClimaContextual />
+        <SimuladorDeteccao />
+      </div>
     </Secao>
   )
 }
