@@ -5,6 +5,16 @@ const CENA = { larguras: [480, 960, 1600], largura: 1600, altura: 1067 }
 const RETRATO = { larguras: [320, 640, 960], largura: 960, altura: 1200 }
 
 export const IMAGENS = {
+  // Imagem oficial da JOVI (jovimobile.com/br), recortada só no celular.
+  // Usada só neste trabalho acadêmico; o crédito aparece sempre junto da foto.
+  joviV70: {
+    base: '/img/jovi-v70',
+    larguras: [400, 600, 740],
+    largura: 740,
+    altura: 800,
+    alt: 'Traseira lilás do celular JOVI V70 5G, com as duas lentes e o anel da câmera principal de 200 MP',
+    credito: 'Imagem: JOVI (V70 5G)',
+  },
   lousa: {
     ...CENA, base: '/img/lousa',
     alt: 'Lousa de sala de aula com anotações e fórmulas escritas à mão',
