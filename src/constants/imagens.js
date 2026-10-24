@@ -1,8 +1,7 @@
 // Manifesto das imagens. `base` + `-<largura>.webp` forma cada arquivo.
 // `aplicaria` diz o que o JoviLens faria na cena (não é o EXIF real da foto).
-// As imagens atuais são provisórias; a Parte 5 troca pelas fotos reais.
-const CENA = { larguras: [480, 960, 1600], largura: 1600, altura: 1067 }
-const RETRATO = { larguras: [320, 640, 960], largura: 960, altura: 1200 }
+// Fotos tiradas no campus da FIAP, recortadas em 3:2 a partir de originais de 900 px de largura.
+const CENA = { larguras: [480, 900], largura: 900, altura: 600 }
 
 export const IMAGENS = {
   // Imagem oficial da JOVI (jovimobile.com/br), recortada só no celular.
@@ -15,29 +14,29 @@ export const IMAGENS = {
     alt: 'Traseira lilás do celular JOVI V70 5G, com as duas lentes e o anel da câmera principal de 200 MP',
     credito: 'Imagem: JOVI (V70 5G)',
   },
-  lousa: {
-    ...CENA, base: '/img/lousa',
-    alt: 'Lousa de sala de aula com anotações e fórmulas escritas à mão',
+  sala: {
+    ...CENA, base: '/img/sala',
+    alt: 'Laboratório de computadores da FIAP com fileiras de monitores e uma tela de projeção recolhida',
     aplicaria: 'Modo Documento · ISO 100 · contraste +40 · nitidez máxima',
   },
   noite: {
     ...CENA, base: '/img/noite',
-    alt: 'Ambiente do campus à noite, com pouca luz e iluminação artificial',
+    alt: 'Salão de convivência da FIAP à noite, com alunos ao fundo e iluminação artificial',
     aplicaria: 'Modo Noite · ISO 3200 · 1/15 s · redução de ruído',
   },
   campus: {
     ...CENA, base: '/img/campus',
-    alt: 'Grupo de estudantes reunidos no campus durante o dia',
+    alt: 'Corredor da FIAP com mural de pôsteres coloridos e janelas com a luz do dia',
     aplicaria: 'Modo Foto · a câmera escolhe sozinha, sem parar o momento',
   },
   idioma: {
     ...CENA, base: '/img/idioma',
-    alt: 'Slide com texto em inglês visto de perto',
+    alt: 'Parede da FIAP com a frase em inglês Let’s rock the future',
     aplicaria: 'Modo Tradução · texto nítido para ler depois',
   },
-  retrato: {
-    ...CENA, base: '/img/retrato',
-    alt: 'Estudante em primeiro plano com o fundo do campus desfocado',
-    aplicaria: 'Modo Retrato · bokeh de IA com desfoque progressivo',
+  entrada: {
+    ...CENA, base: '/img/entrada',
+    alt: 'Entrada da FIAP à noite, com o letreiro vermelho aceso e uma pessoa entrando',
+    aplicaria: 'Modo Noite · letreiro aceso sem estourar · redução de ruído',
   },
 }

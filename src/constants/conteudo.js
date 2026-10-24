@@ -23,17 +23,17 @@ export const RECURSOS = [
 ]
 
 export const CONTEXTOS = [
-  { titulo: 'Sala de aula', imagem: 'lousa',
+  { titulo: 'Sala de aula', imagem: 'sala',
     descricao: 'Fotografa lousa, slide e apostila todo dia e precisa do texto legível.' },
-  { titulo: 'Biblioteca e restaurante universitário', imagem: 'noite',
+  { titulo: 'Biblioteca e áreas de convivência à noite', imagem: 'noite',
     descricao: 'Pouca luz e iluminação artificial, onde a câmera automática comum costuma falhar.' },
-  { titulo: 'Eventos no campus', imagem: 'campus',
+  { titulo: 'Corredores e eventos no campus', imagem: 'campus',
     descricao: 'Quer registrar o momento com os amigos sem parar para mexer em modo, foco ou exposição.' },
   { titulo: 'Material em outro idioma', imagem: 'idioma',
     descricao: 'Encontra um artigo, placa ou slide em outra língua e precisa capturar com nitidez para entender depois.' },
 ]
 
-export const FOTOS_GALERIA = ['lousa', 'noite', 'campus', 'idioma', 'retrato']
+export const FOTOS_GALERIA = ['entrada', 'noite', 'campus', 'idioma', 'sala']
 
 // `fala` é rascunho: cada integrante reescreve com as próprias palavras.
 export const EQUIPE = [
@@ -51,9 +51,9 @@ export const CONTATO = { email: 'contato.jovilens@gmail.com' }
 // Cenas que o simulador sorteia. `id` é a chave da foto em IMAGENS e `modo`
 // é o que o JoviLens escolheria para ela.
 export const CENAS = [
-  { id: 'lousa', modo: 'Documento', rotulo: 'Lousa em sala de aula' },
-  { id: 'noite', modo: 'Noite', rotulo: 'Campus à noite' },
-  { id: 'campus', modo: 'Foto', rotulo: 'Encontro no campus' },
-  { id: 'idioma', modo: 'Tradução', rotulo: 'Slide em outro idioma' },
-  { id: 'retrato', modo: 'Retrato', rotulo: 'Retrato com fundo desfocado' },
+  { id: 'sala', modo: 'Documento', rotulo: 'Sala de aula com projetor' },
+  { id: 'noite', modo: 'Noite', rotulo: 'Salão de convivência à noite' },
+  { id: 'campus', modo: 'Foto', rotulo: 'Corredor do campus de dia' },
+  { id: 'idioma', modo: 'Tradução', rotulo: 'Frase em inglês na parede' },
+  { id: 'entrada', modo: 'Noite', rotulo: 'Entrada do campus à noite' },
 ]
