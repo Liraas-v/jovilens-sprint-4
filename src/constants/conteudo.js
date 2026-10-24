@@ -37,11 +37,11 @@ export const FOTOS_GALERIA = ['lousa', 'noite', 'campus', 'idioma', 'retrato']
 
 // `fala` é rascunho: cada integrante reescreve com as próprias palavras.
 export const EQUIPE = [
-  { nome: 'Henrique Lira da Silva Costa', funcao: 'Back-end e Python', foto: 'equipe-henrique',
+  { nome: 'Henrique Lira da Silva Costa', funcao: 'Back-end e Python',
     fala: 'Cuido do Python e do que não aparece na tela. Gosto de entender como a coisa funciona por dentro.' },
-  { nome: 'Lucas de Abreu Latuf', funcao: 'Front-end e Protótipo', foto: 'equipe-latuf',
+  { nome: 'Lucas de Abreu Latuf', funcao: 'Front-end e Protótipo',
     fala: 'Desenhei o protótipo do JoviLens tela por tela e cuido de como ele parece e se comporta.' },
-  { nome: 'Lucas Cardoso Franco', funcao: 'Modelagem, Documentação e Storytelling', foto: 'equipe-cardoso',
+  { nome: 'Lucas Cardoso Franco', funcao: 'Modelagem, Documentação e Storytelling',
     fala: 'Deixo o projeto organizado no papel antes de ele chegar na tela, e conto a história dele.' },
 ]
 

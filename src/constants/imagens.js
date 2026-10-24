@@ -40,16 +40,4 @@ export const IMAGENS = {
     alt: 'Estudante em primeiro plano com o fundo do campus desfocado',
     aplicaria: 'Modo Retrato · bokeh de IA com desfoque progressivo',
   },
-  'equipe-henrique': {
-    ...RETRATO, base: '/img/equipe-henrique',
-    alt: 'Retrato de Henrique Lira em luz natural',
-  },
-  'equipe-latuf': {
-    ...RETRATO, base: '/img/equipe-latuf',
-    alt: 'Retrato de Lucas Latuf em luz natural',
-  },
-  'equipe-cardoso': {
-    ...RETRATO, base: '/img/equipe-cardoso',
-    alt: 'Retrato de Lucas Cardoso em luz natural',
-  },
 }
